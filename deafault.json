@@ -1,0 +1,34 @@
+[
+    {
+        "title": "library",
+        "dueDate": " 5/12/2024",
+        "todos":[{
+            "title": "book shopping",
+            "description":"buy 3 new novels",
+            "dueDate":" 5/12/2024",
+            "notes":" white nights by dostoevsky, dead souls by Gogol"
+        },
+        {
+            "title": "book shopping",
+            "description":"buy 3 new novels",
+            "dueDate":" 5/12/2024",
+            "notes":" white nights by dostoevsky, dead souls by Gogol"
+        }]
+    },
+    {
+        "title": "Book Date",
+        "dueDate": " 5/12/2024",
+        "todos":[{
+            "title": "book shopping",
+            "description":"buy 3 new novels",
+            "dueDate":" 5/12/2024",
+            "notes":" white nights by dostoevsky, dead souls by Gogol"
+        },
+        {
+            "title": "book shopping",
+            "description":"buy 3 new novels",
+            "dueDate":" 5/12/2024",
+            "notes":" white nights by dostoevsky, dead souls by Gogol"
+        }]
+    }
+]

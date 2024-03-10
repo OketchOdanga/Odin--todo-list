@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --BG-color-body: #436850;
+    --BG-color-header:  #12372a;
+    --BG-color-main: #fbfada;
+    --placeHolder-color:#12372a;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    background-color: var(--BG-color-body);
+}
+
+header{
+    background-color: var(--BG-color-header);
+    color: #fbfada;
+}
+/* |MAIN */
+main{
+    background-color: var(--BG-color-main);
+}
+
+main h2{
+    color: var(--BG-color-header);
+}
+
+main p{
+    color: var(--BG-color-body);
+}
+
+/* PROJECTS AND TODOS */
+
+.projects{
+    display: grid;
+    grid-template-columns: 45% 55%;
+} 
+
+.prj-heading{
+    display: flex;
+    justify-content: space-between;
+}
+
+#prj{
+    display: grid;
+    gap: 10px;
+    height: 8rem;
+    background-color: #ADBC9F;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 3px 1px #12372a;
+}
+
+.prjItem{
+    display: grid;
+    gap: 10px;
+}
+
+/* ||FORMS */
+dialog{
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    padding: 3rem;
+    border: none;
+}
+
+.todoItems{
+    background-color: #12372a;
+}
+
+.todoItems button{
+    background-color: black;
+}
+form{
+    display: grid;
+    gap: 10px;
+}
+label{
+    font-size: 18px;
+    color: #12372a;
+}
+input{
+    width: 100%;
+    height: 3rem;
+    border-radius: 10px;
+}
+input::placeholder{
+    color: var(--placeHolder-color);
+    font-size: 16px;
+}
+
+button{
+    padding: .5rem 1.5rem;
+    width: 7rem;
+    height: 3rem;
+    background-color: var(--BG-color-header);
+    color: var(--BG-color-main);
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* TABLE */
+table button{
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+}
+
+table, th, tr,td{
+    border: 1px solid #01160f;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
+
+table thead{
+    color: #ADBC9F;
+}
+tbody{
+    color: #fbfada;
+}
+
+
+

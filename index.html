@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin | Todo list</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Todo List</h1>
+        <p>Make your work easier by breaking it down into small todos</p>
+    </header>
+    <main>
+        <h2>Projects</h2>
+        <p>Want to create a new project? click the button below!</p>
+        <button type="button" class="add-project" id="addProject-btn">New Project</button>
+        <dialog data-modal>
+        <form class="project-form" id=project-form >
+            <div>
+                <label for="projectTitle">Project Title:</label>
+                <input type="text" name="projectTitle" id="projectTitle" placeholder="Project title">
+            </div>
+            
+            <div>
+                <label for="dueDate">Due Date:</label>
+                <input type="date" name="dueDate" id="dueDate">
+            </div>
+            
+            <div>
+                <button type="submit" >Submit</button>
+                <button type="reset" id="reset">Cancel</button>
+            </div>    
+        </form>
+        </dialog>
+       
+        <section class="container" id="container">
+            <h2>My Projects</h2> 
+            <section class="projects" id="projects">
+                
+                <section class="projectItems" id="projectItems">
+                    <div class="prjItem" id="prjItem">
+     
+                    
+                    </div>
+                </section>
+                <section class="todoItems" id="todoItems">
+
+                </section>
+            </section>
+        </section>
+
+
+        <dialog class="modal" id="modal">
+        <form class="todo-form" id=todo-form >
+            <div>
+                <label for="todoTitle">todo Title:</label>
+                <input type="text" name="todoTitle" id="todoTitle" placeholder="todo title">
+            </div>
+            
+            <div>
+                <label for="todoDescription">Descriprition:</label>
+                <input type="text" name="todoDescription" id="todoDescription" placeholder="Describe your todo here!">
+            </div>
+            
+            <div>
+                <label for="todo-dueDate">Due Date:</label>
+                <input type="date" name="todo-dueDate" id="todo-dueDate">
+            </div>
+           
+            <div>
+                <label for="todo-notes">Notes:</label>
+                <textarea name="todo-notes" id="todo-notes" cols="30" rows="10" placeholder="note something down"></textarea>
+            </div>
+
+            <div>
+                <button type="submit" class="todo-form-btn" id="todo-form-btn">Save todo</button>
+                <button type="reset" id="reset" >Cancel</button>
+            </div>
+            
+        </form>
+        </dialog>
+        <dialog class="modal" id="modal-edit">
+        <form class="edit-form" id=edit-form >
+            <div>
+                <label for="edit-todoTitle">todo Title:</label>
+                <input type="text" name="edit-todoTitle" id="edit-todoTitle" placeholder="todo title">
+            </div>
+            
+            <div>
+                <label for="edit-todoDescription">Descriprition:</label>
+                <input type="text" name="edit-todoDescription" id="edit-todoDescription" placeholder="Describe your todo here!">
+            </div>
+            
+            <div>
+                <label for="edit-todo-dueDate">Due Date:</label>
+                <input type="date" name="edit-todo-dueDate" id="edit-todo-dueDate">
+            </div>
+           
+            <div>
+                <label for="edit-todo-notes">Notes:</label>
+                <textarea name="edit-todo-notes" id="edit-todo-notes" cols="30" rows="10" placeholder="note something down"></textarea>
+            </div>
+
+            <div>
+                <button type="submit" class="edit-form-btn" id="edit-form-btn">Save Changes</button>
+                <button type="reset" id="reset" >Cancel</button>
+            </div>
+            
+        </form>
+        </dialog>
+    </main>
+    <footer></footer>
+    
+</body>
+</html>
